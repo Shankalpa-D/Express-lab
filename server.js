@@ -6,10 +6,13 @@ const postRoutes = require("./routes/posts");
 
 const app = express();
 app.set("view engine", "ejs");
+<<<<<<< Updated upstream
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 
+=======
+>>>>>>> Stashed changes
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
